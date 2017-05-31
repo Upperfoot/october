@@ -30,8 +30,16 @@
         "october/backend": "~1.0",
         "october/cms": "~1.0",
         "laravel/framework": "5.1.*",
-        "wikimedia/composer-merge-plugin": "dev-master"
+        "wikimedia/composer-merge-plugin": "dev-master",
+        "autumn/api": "dev-master",
+        "rainlab/builder-plugin": "dev-master"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/Upperfoot/oc-api-plugin"
+        }
+    ],
     "require-dev": {
         "fzaninotto/faker": "~1.4",
         "phpunit/phpunit": "~4.0",
@@ -55,6 +63,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
+        "installer-paths": {
+            "plugins/autumn/{$name}": [
+                "autumn/api"
+            ]
+        },
         "merge-plugin": {
             "include": [
                 "plugins/*/*/composer.json"
