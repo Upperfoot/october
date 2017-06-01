@@ -63,11 +63,6 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "extra": {
-        "installer-paths": {
-            "plugins/autumn/{$name}": [
-                "autumn/api"
-            ]
-        },
         "merge-plugin": {
             "include": [
                 "plugins/*/*/composer.json"
